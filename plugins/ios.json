@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "framework": {
+                "parents": {
+                    "iAd.framework": [
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"iAd\"><param name=\"ios-package\" value=\"iAdPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.rjfun.cordova.iad": {
+            "PACKAGE_NAME": "com.oleninc.dtrivia"
+        }
+    },
+    "dependent_plugins": {
+        "com.rjfun.cordova.extension": {
+            "PACKAGE_NAME": "com.oleninc.dtrivia"
+        }
+    }
+}
